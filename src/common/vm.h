@@ -1,5 +1,5 @@
-#ifndef _VM_H
-#define _VM_H
+#ifndef VM_H
+#define VM_H
 #include <stdint.h>
 #include <stdio.h>
 #include <stdbool.h>
@@ -17,6 +17,7 @@ typedef union {
 
 typedef enum {
   OP_NOP = 0x0,
+
   OP_PUSH,
   OP_POP,
   OP_DUP,
@@ -158,4 +159,4 @@ typedef struct {
 
 Result native_write(VM *vm);
 Result native_exit(VM *vm);
-#endif // _VM_H
+#endif // VM_H

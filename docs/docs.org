@@ -1,0 +1,23 @@
+* Docs
+#+begin_quote 
+*Warning*: This is all a WIP, so no guarantees of anything
+#+end_quote
+
+** TODO Instructions
+| OpCode    | Description                                                  | ARGS               | Note                                                          |
+|-----------+--------------------------------------------------------------+--------------------+---------------------------------------------------------------|
+| ~OP_NOP~  | No Operation                                                 |                    |                                                               |
+| ~OP_PUSH~ | Push something onto Stack                                    | Word               |                                                               |
+| ~OP_POP~  | POP something from Stack                                     |                    |                                                               |
+| ~OP_DUP~  | Duplicate the nth Stack member to the top                    | Stack Index from 0 |                                                               |
+| ~OP_SWAP~ | SWAP the nth Sack member with top                            | Stack Index from 1 |                                                               |
+|           |                                                              |                    |                                                               |
+|           |                                                              |                    |                                                               |
+| ~OP_ADD~  | Consume the top two stack members and add them               |                    |                                                               |
+| ~OP_SUB~  | Consume the top two stack members and subtract them          |                    | [-1] - [0]                                                    |
+| ~OP_MULT~ | Consume the top two stack members and multiply them          |                    |                                                               |
+| ~OP_DIV~  | Consume the top two stack members and divide them            |                    | [-1] / [0]                                                    |
+| ~OP_MOD~  | Consume the top two stack members and modulo them            |                    | [-1] % [0]                                                    |
+|           |                                                              |                    |                                                               |
+| ~OP_EQ~   | If the two stack members on top are equal push 1 otherwise 0 |                    | Stuff like < > can be implemented using just ~OP_EQ~ see [[file:~/Documents/coding/vl/examples/vasm/std.lasm][here]] |
+|           |                                                              |                    |                                                               |
